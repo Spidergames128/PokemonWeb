@@ -81,4 +81,29 @@ html{
 }
 h1{
   text-decoration: underline;
+
+}
+.block_kanto_header {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-image: url(https://archives.bulbagarden.net/media/upload/7/7d/PE_Kanto_Map.png);
+  background-size: cover;
+  background-position: top;
+  border-radius: 5px;
+}
+
+.block_kanto_header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* overlay */
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block_kanto_header > * {
+  position: relative;
+  z-index: 1;
 }
