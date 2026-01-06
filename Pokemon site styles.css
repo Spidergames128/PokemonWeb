@@ -26,7 +26,7 @@ body::before {
 /* Oblasti gridu */
 .header { grid-area: header; background: #79c9fa; color: black; text-align: center; padding: 20px; position: sticky; }
 .nav    { grid-area: nav; background: transparent; padding: 20px; text-align: center; }
-.main   { grid-area: main; background: #fff; padding: 20px; text-align: center; border-radius: 10px; border: 2px solid #004a94;}
+.main   { grid-area: main; background: #fff; padding: 20px; text-align: center; border-radius: 10px; border: 2px solid #004a94; }
 .aside  { grid-area: aside; background: transparent; padding: 20px; text-align: center; }
 
 /* 💻 Větší obrazovky – 3 sloupce */
@@ -43,15 +43,18 @@ a{
   text-decoration: none;
   color: black;
   font-weight: bold;
+
 }
 a:hover{
   color: blue;
+
 
 }
 .block{
   background-color: #ffffff;
   border: 2px solid #004a94;
-  border-radius: 5px;
+  border-radius: 10px;
+  
 }
 html{
   scroll-behavior: smooth;
@@ -72,17 +75,12 @@ html{
   padding: 10px;
 
 }
-.map{
-  width: 500px; 
-  transition: 0.3s;
-}
-.map:hover{
-  transform: scale(1.05);
-}
 h1{
   text-decoration: underline;
-
 }
+
+  /*Header*/
+
 .block_kanto_header {
   position: relative;
   padding: 10px;
@@ -91,13 +89,14 @@ h1{
   background-size: cover;
   background-position: top;
   border-radius: 5px;
+
 }
 
 .block_kanto_header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* overlay */
+  background-color: rgba(0, 0, 0, 0.2); /* overlay */
   z-index: 0;
   border-radius: 5px;
   padding: 10px;
@@ -107,3 +106,131 @@ h1{
   position: relative;
   z-index: 1;
 }
+
+  /*PASSPORT*/
+
+.passport{
+  position: relative;
+  text-align: left;
+  background-color: #ffffff;
+  border: 2px solid #004a94;
+  border-radius: 10px;
+  block-size: 500px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+
+}
+.passport::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* overlay */
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.passport > * {
+  position: relative;
+  z-index: 1;
+}
+
+.flex_passport{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.passport_side_png{
+  width: 400px;
+  height: 400px;
+  margin-left: 50px;
+}
+.passport_image{
+  border: 2px solid #004a94;
+  margin: 10px;
+  border-radius: 10px;
+}
+.passport_text{
+  border: 2px solid #004a94;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  width: 700px;
+  background: rgba(255, 255, 255, 0.4);
+  
+}
+p{
+  font-size: x-large;
+  font-weight: bold;
+}
+.Passport_Background_Kanto{
+  background-image: url(https://archives.bulbagarden.net/media/upload/7/7d/PE_Kanto_Map.png);
+}
+.Passport_Owned_Pokemon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Passport_Pokemon_Size{
+  width: 100px;
+  height: 100px;
+}
+
+
+pre{
+  font-size: 6mm;
+  font-weight: bold;
+}
+.images {
+    display: flex;
+    gap: 20px;
+}
+
+.images img {
+    width: 500px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.3);
+}
+
+/* LIGHTBOX */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+#lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#lightboxImg {
+  max-width: 95vw;
+  max-height: 95vh;
+  border-radius: 10px;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+
