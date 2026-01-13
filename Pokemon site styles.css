@@ -232,5 +232,36 @@ pre{
   color: white;
   cursor: pointer;
 }
+    /*Header Sinnoh*/
+
+.block_sinnoh_header {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-image: url(https://archives.bulbagarden.net/media/upload/0/08/Sinnoh_BDSP_artwork.png);
+  background-size: cover;
+  background-position: top;
+  border-radius: 5px;
+
+}
+
+.block_sinnoh_header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* overlay */
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block_sinnoh_header > * {
+  position: relative;
+  z-index: 1;
+}
+.Passport_Background_Sinnoh{
+  background-image: url(https://archives.bulbagarden.net/media/upload/0/08/Sinnoh_BDSP_artwork.png);
+  background-position: center;
+}
 
 
