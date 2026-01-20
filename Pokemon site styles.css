@@ -24,10 +24,11 @@ body::before {
 }
 
 /* Oblasti gridu */
-.header { grid-area: header; background: #79c9fa; color: black; text-align: center; padding: 20px; position: sticky; }
-.nav    { grid-area: nav; background: transparent; padding: 20px; text-align: center; }
+.header { grid-area: header; background: transparent; color: black; text-align: center; padding: 20px; }
+.nav    { grid-area: nav; background: transparent; padding: 20px; text-align: center; position: sticky; top: 0; }
 .main   { grid-area: main; background: #fff; padding: 20px; text-align: center; border-radius: 10px; border: 2px solid #004a94; }
 .aside  { grid-area: aside; background: transparent; padding: 20px; text-align: center; }
+.move_header {position: sticky; z-index: +2; top: 0;}
 
 /* 💻 Větší obrazovky – 3 sloupce */
 @media (min-width: 768px) {
@@ -146,6 +147,7 @@ h1{
   width: 400px;
   height: 400px;
   margin-left: 50px;
+  margin-right: 50px;
 }
 .passport_image{
   border: 2px solid #004a94;
@@ -262,5 +264,67 @@ pre{
 }
 .Passport_Background_Sinnoh{
   background-image: url(https://archives.bulbagarden.net/media/upload/0/08/Sinnoh_BDSP_artwork.png);
+  background-position: center;
+}
+
+/*Hisui*/ 
+.block_hisui_header {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-image: url(https://archives.bulbagarden.net/media/upload/2/22/Legends_Arceus_Hisui.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+
+}
+
+.block_hisui_header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* overlay */
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block_hisui_header > * {
+  position: relative;
+  z-index: 1;
+}
+.Passport_Background_hisui{
+  background-image: url(https://archives.bulbagarden.net/media/upload/2/22/Legends_Arceus_Hisui.png);
+  background-position: center;
+}
+
+/*Galar*/ 
+.block_galar_header {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-image: url(https://archives.bulbagarden.net/media/upload/c/ce/Galar_artwork.png);
+  
+  background-position: center;
+  border-radius: 5px;
+
+}
+
+.block_galar_header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* overlay */
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block_galar_header > * {
+  position: relative;
+  z-index: 1;
+}
+.Passport_Background_galar{
+  background-image: url(https://archives.bulbagarden.net/media/upload/c/ce/Galar_artwork.png);
   background-position: center;
 }
