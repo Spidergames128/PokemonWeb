@@ -175,20 +175,35 @@ pre{
   white-space: pre-wrap;
 }
 .images {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .images img {
-    width: 500px;
-    border-radius: 10px;
-    transition: 0.3s;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .images {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+}
+
+@media (hover: none) {
+  .images img:hover {
+    transform: none;
+  }
 }
 
 .images img:hover {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
-
 /* LIGHTBOX */
 #lightbox {
   position: fixed;
@@ -314,4 +329,5 @@ pre{
   background-image: url(https://archives.bulbagarden.net/media/upload/c/ce/Galar_artwork.png);
   background-position: center;
 }
+
 
