@@ -330,4 +330,67 @@ pre{
   background-position: center;
 }
 
+/*Paldea*/ 
+.block_paldea_header {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-image: url(https://archives.bulbagarden.net/media/upload/f/fd/Paldea_artwork.png);
+  background-position: center;
+  border-radius: 5px;
+  background-size: cover;
+
+}
+
+.block_paldea_header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* overlay */
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block_paldea_header > * {
+  position: relative;
+  z-index: 1;
+}
+.Passport_Background_paldea{
+  background-image: url(https://archives.bulbagarden.net/media/upload/f/fd/Paldea_artwork.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/*Kalos*/ 
+.block_kalos_header {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-image: url(https://archives.bulbagarden.net/media/upload/f/fe/ZA_Lumiose_City_map.png);
+  background-position: center;
+  border-radius: 5px;
+  background-size: cover;
+
+}
+
+.block_kalos_header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* overlay */
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block_kalos_header > * {
+  position: relative;
+  z-index: 1;
+}
+.Passport_Background_kalos{
+  background-image: url(https://archives.bulbagarden.net/media/upload/f/fe/ZA_Lumiose_City_map.png);
+  background-position: center;
+  background-size: cover;
+}
 
