@@ -394,3 +394,88 @@ pre{
   background-size: cover;
 }
 
+/*Battel Gimmicks*/
+.block_mega_header, .block_zmoves_header, .block_giga_header, .block_tera_header  {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-size: cover;
+  background-position: top;
+  border-radius: 5px;
+
+}
+
+.block_mega_header, .block_zmoves_header, .block_giga_header, .block_tera_header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* overlay */
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block_mega_header, .block_zmoves_header, .block_giga_header, .block_tera_header > * {
+  position: relative;
+  z-index: 1;
+}
+.block_mega_header{
+  background: radial-gradient(circle at top, rgba(203, 72, 142), rgba(106, 188, 207 ), rgba(193, 186, 77), rgba(226, 146, 62 ));
+}
+.block_zmoves_header{
+  background: radial-gradient(circle at top,rgba(48, 244, 81 ), rgba(27, 148, 28) );
+}
+.block_giga_header{
+  background: radial-gradient(circle at top, rgba(255, 215, 214), rgba(242, 99, 142 ), rgba(183, 17, 82 ));
+}
+.block_tera_header{
+  background: radial-gradient(circle at top, rgb(193, 255, 243), rgba(163, 229, 217 ), rgb(50, 243, 201));
+}
+
+.tera_logo {
+  width: 70px;
+  height: 70px;
+}
+
+@media (min-width: 768px) {
+  .tera_logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.info{
+  position: relative;
+  text-align: left;
+  border-radius: 10px;
+  width: 100%; 
+  max-width: 1000px; 
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+
+
+}
+.info::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.info > * {
+  position: relative;
+  z-index: 1;
+}
+.info_text{
+  flex: 1;
+  min-width: 280px; 
+  margin: 10px;
+  padding: 10px;
+}
+.info_text pre{
+  font-family: ' Calibri ' , sans-serif;
+}
+
