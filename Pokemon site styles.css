@@ -479,3 +479,84 @@ pre{
   font-family: ' Calibri ' , sans-serif;
 }
 
+/*Types*/
+
+.block_normal_header, .block_fighting_header, .block_flying_header, .block_poison_header, .block_ground_header, .block_rock_header, .block_bug_header, .block_ghost_header, .block_steel_header, .block_dragon_header, .block_fire_header, .block_water_header, .block_grass_header, .block_electric_header, .block_psychic_header, .block_ice_header, .block_dark_header, .block_fairy_header {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-size: cover;
+  background-position: top;
+  border-radius: 5px;
+
+}
+
+.block_normal_header, .block_fighting_header, .block_flying_header, .block_poison_header, .block_ground_header, .block_rock_header, .block_bug_header, .block_ghost_header, .block_steel_header, .block_dragon_header, .block_fire_header, .block_water_header, .block_grass_header, .block_electric_header, .block_psychic_header, .block_ice_header, .block_dark_header, .block_fairy_header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block_normal_header, .block_fighting_header, .block_flying_header, .block_poison_header, .block_ground_header, .block_rock_header, .block_bug_header, .block_ghost_header, .block_steel_header, .block_dragon_header, .block_fire_header, .block_water_header, .block_grass_header, .block_electric_header, .block_psychic_header, .block_ice_header, .block_dark_header, .block_fairy_header > * {
+  position: relative;
+  z-index: 1;
+}
+.block_normal_header{
+  background-color: rgba(159, 161, 159) ;
+}
+.block_fighting_header{
+  background-color: rgba(255, 128, 0) ;
+}
+.block_flying_header{
+  background-color: rgba(129, 185, 239) ;
+}
+.block_poison_header{
+  background-color: rgba(145, 65, 203) ;
+}
+.block_ground_header{
+  background-color: rgba(144, 80, 32) ;
+}
+.block_rock_header{
+  background-color: rgba(175, 169, 129) ;
+}
+.block_bug_header{
+  background-color: rgba(145, 161, 25) ;
+}
+.block_ghost_header{
+  background-color: rgba(112, 65, 112) ;
+}
+.block_steel_header{
+  background-color: rgba(96, 161, 184) ;
+}
+.block_fire_header{
+  background-color: rgba(230, 40, 41) ;
+}
+.block_water_header{
+  background-color: rgba(41, 128, 239) ;
+}
+.block_grass_header{
+  background-color: rgba(63, 161, 41) ;
+}
+.block_electric_header{
+  background-color: rgba(250, 192, 0) ;
+}
+.block_psychic_header{
+  background-color: rgba(239, 65, 121) ;
+}
+.block_ice_header{
+  background-color: rgba(63, 216, 255) ;
+}
+.block_dragon_header{
+  background-color: rgba(80, 96, 225) ;
+}
+.block_dark_header{
+  background-color: rgba(80, 65, 63) ;
+}
+.block_fairy_header{
+  background-color: rgba(239, 112, 239) ;
+}
+
