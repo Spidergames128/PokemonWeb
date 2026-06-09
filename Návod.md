@@ -1,13 +1,12 @@
-Toto je nejlepší E-Shop kdo kdy viděl. Tady je jak by se měl udělat aby to viděli úplně všichni, i vy.
 
-Zapněte XAMPP a v něm spusťte Apache a MySQL
 
-Zapnete phpMyAdmin a vytvořte databází s názvem p_eshop
+1.Zapněte XAMPP a v něm spusťte Apache a MySQL
 
-Import p_eshop.sql do databáze p_eshop
+2.Zapnete phpMyAdmin a vytvořte databází s názvem p_eshop
 
-Do db.php to upravte aby to fungovalo pro vás (Jestli nemáte heslo tak tam nic nemusíte měnit)
+3.Import p_eshop.sql do databáze p_eshop
 
-Toto potom otevřít http://localhost/index.php (Jestli ste si to nedal do nějaké složky)
+4.Do db.php to upravte aby to fungovalo pro vás (Jestli nemáte heslo tak tam nic nemusíte měnit)
 
-To je asi vše. Jestli by byl nějaká problem tak mi napiště
+5.Toto potom otevřít http://localhost/eshop.html (Jestli ste si to nedal do nějaké složky)
+
